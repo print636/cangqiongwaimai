@@ -5,7 +5,7 @@ import com.sky.dto.DishDTO;
 import com.sky.dto.DishPageQueryDTO;
 import com.sky.result.PageResult;
 import com.sky.result.Result;
-import com.sky.service.Dishservice;
+import com.sky.service.DishService;
 import com.sky.vo.DishVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -22,7 +22,7 @@ import java.util.List;
 public class DishController {
 
     @Autowired
-    private Dishservice dishService;
+    private DishService dishService;
 
     @PostMapping
     @ApiOperation("新增菜品")
